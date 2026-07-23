@@ -23,7 +23,7 @@ jobs:
           node-version: 22     # was 18 (EOL); 22 is current Active LTS
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v8   # was @master — pin to a release
